@@ -3,6 +3,7 @@ build:
   commands:
     # - ./.drone/create_container.sh
     - npm update
+    - ls
 
 cache:
   mount:

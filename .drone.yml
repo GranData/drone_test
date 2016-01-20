@@ -1,4 +1,4 @@
 build:
-  image: af
+  image: afsdflnlnln
   commands:
     - echo "Hi!"

@@ -17,6 +17,11 @@ else
   NPM_PREV_VERSION=`cat $PACKAGES_VERSION_FILE`
 fi
 
+if [[ $LAST_COMMIT != $NPM_PREV_VERSION ]]; then 
+    echo "package.json has changed. Removing node_modules"; 
+    rm -rf node_modules/*
+fi;
+
 
 echo "Last build was: $NPM_PREV_VERSION. Next: $LAST_COMMIT"
 

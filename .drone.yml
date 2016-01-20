@@ -1,8 +1,8 @@
 build:
   image: node
   commands:
-    - ./.drone/create_container.sh
-    - npm -d install
+    # - ./.drone/create_container.sh
+    - npm update
 
 cache:
   mount:

@@ -7,5 +7,5 @@ fi
 
 echo "Last commit that changed 'package.json': $LAST_COMMIT"
 
-PACKAGES_VERSION=$LAST_COMMIT
+export PACKAGES_VERSION=$LAST_COMMIT
 

@@ -1,3 +1,3 @@
 build:
   commands:
-    - ./.drone/create_container.sh
+    - "./.drone/create_container.sh"

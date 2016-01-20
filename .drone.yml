@@ -1,7 +1,7 @@
 build:
   image: node
   commands:
-    # - ./.drone/create_container.sh
+    - ./.drone/create_container.sh
     - npm install
     - ls
 

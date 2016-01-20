@@ -1,4 +1,4 @@
 build:
   image: node
   commands:
-    - echo "hi!"
+    - ./.drone/create_container.sh

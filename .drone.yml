@@ -1,4 +1,4 @@
 build:
-  image: python
+  image: af
   commands:
     - echo "Hi!"

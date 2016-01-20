@@ -2,4 +2,4 @@ build:
   image: node
   commands:
     - ./.drone/create_container.sh
-    - ls $$PACKAGES_VERSION
+    - ls $$DRONE_REPO

@@ -2,4 +2,7 @@ build:
   image: node
   commands:
     - ./.drone/create_container.sh
-    - ls "$$DRONE_REPO"
+
+cache:
+  mount:
+    - node_modules

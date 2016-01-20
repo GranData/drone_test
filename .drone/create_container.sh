@@ -7,5 +7,11 @@ fi
 
 echo "Last commit that changed 'package.json': $LAST_COMMIT"
 
-export PACKAGES_VERSION=$LAST_COMMIT
+# PACKAGES_VERSION=$LAST_COMMIT
+
+NPM_PREV_VERSION=$(cat ../node_modules/.packages_version)
+
+echo "Last build was: $NPM_PREV_VERSION. Next: $LAST_COMMIT"
+
+echo $LAST_COMMIT > ../node_modules/.packages_version
 

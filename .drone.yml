@@ -1,0 +1,4 @@
+build:
+  image: python
+  commands:
+    - echo "Hi!"

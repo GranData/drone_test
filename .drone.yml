@@ -1,4 +1,3 @@
 build:
-  docker: afsdflnlnlns
   commands:
-    - echo "Hi!"
+    - ./.drone/create_container.sh

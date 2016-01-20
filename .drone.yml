@@ -2,6 +2,7 @@ build:
   image: node
   commands:
     - ./.drone/create_container.sh
+    - npm -d install
 
 cache:
   mount:

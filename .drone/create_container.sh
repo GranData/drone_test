@@ -5,4 +5,7 @@ if [ -z "$LAST_COMMIT" ]; then
   LAST_COMMIT="default"
 fi
 
-echo $LAST_COMMIT
+echo "Last commit that changed 'package.json': $LAST_COMMIT"
+
+PACKAGES_VERSION=$LAST_COMMIT
+
